@@ -12,3 +12,4 @@ artifacts/contracts/*/*.dbg.json
 artifacts/hardhat
 
 imggen/traits
+.env.example
