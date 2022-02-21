@@ -5,7 +5,7 @@ const { whitelist } = require("../assets/whitelist.js");
 const main = async () => {
   
   const nftFactory = await hre.ethers.getContractFactory("JAWS");
-  const nftContract = await nftFactory.attach('0x7A090717287e29563aA5d37fbb2D2f492910F15A');
+  const nftContract = await nftFactory.attach('0xc380714d54d1cD93d926835637a7fD67236F4DD3');
 
   const leafNodes = whitelist.map((addr) => keccak256(addr));
   const merkleTree = new MerkleTree(leafNodes, keccak256, { sortPairs: true });
